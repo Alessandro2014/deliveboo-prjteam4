@@ -5,7 +5,7 @@
             v-for="(dish, i) in dishes"
             :key="i"
             class="card col-lg-5 col-md-12 shadow-sm p-3 mb-3 me-3 d-flex"
-            :class="[dish.available ? 'available' : 'unavailable']"
+            :class="[dish.available ? 'available' : 'd-none']"
         >
             <img
                 style="object-fit: cover"
@@ -191,7 +191,7 @@ button[type="button"] {
     font-weight: bold;
 }
 
-.card.unavailable {
+.unavailable {
     display: none;
 }
 </style>
